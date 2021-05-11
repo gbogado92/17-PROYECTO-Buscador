@@ -1,11 +1,15 @@
 // Variables
 
 const resultado = document.querySelector('#resultado')
+const year = document.querySelector('#year')
 
 // Eventos
 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarAutos();
+    mostrarAutos(); //Muestra los automoviles al cargar
+
+    //Llena las opciones de años
+    llenarSelect();
 })
 
 // Funciones 
@@ -23,4 +27,10 @@ function mostrarAutos() {
         // Insertar en el HTML 
         resultado.appendChild(autosHTML);
     })
+}
+
+// Genera los años del select 
+
+function llenarSelect() {
+    console.log('Llenando el select...')
 }
