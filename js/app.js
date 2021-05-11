@@ -27,9 +27,11 @@ const datosBusqueda = {
 // Eventos
 
 document.addEventListener('DOMContentLoaded', () => {
+
     mostrarAutos( autos ); // Muestra los autos al cargar.
 
     // Lena las opciones de años.
+
     llenarSelect();
 })
 
